@@ -1,6 +1,6 @@
 import smtplib
 import time
-from p3修订 import *
+from necessary_func import *
 import logging
 from datetime import datetime
 import os
@@ -8,7 +8,7 @@ import pandas as pd
 from email.mime.text import MIMEText
 
 
-
+#出问题邮箱通知
 def send_email(content):
     #163邮箱服务器地址
     mail_host = 'smtp.163.com'
@@ -49,7 +49,7 @@ def send_email(content):
 
 
 
-
+#记录日志
 def setup_logger():
     """
     设置日志记录器
